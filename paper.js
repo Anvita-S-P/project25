@@ -9,18 +9,18 @@ class Paper{
         density:1.2
     }
 
-    this.body=Matter.Bodies.circle(x,y,70,options);
+    this.body=Matter.Bodies.circle(x,y,30,options);
     World.add(world,this.body);
-    this.img=loadImage("sprites/paper image.png");
+    this.img=loadImage("sprites/paperimage.png");
 
 }
 
  display(){
      var pos=this.body.position;
      push ();
-     imageMode(RADIUS);
+     imageMode(CENTER);
      fill("pink");
-     image(this.body.pos.x,this.body.pos.y,70);
+     image(this.img,pos.x,pos.y,70,70);
  }
 
 

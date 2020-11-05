@@ -6,7 +6,7 @@ class dustBin{
         }
         this.body=Bodies.rectangle(x,y,w,h,options);
         World.add(world,this.body);
-        this.img=loadImage("sprites/dustbingreen image.png");
+        this.img=loadImage("sprites/dustbingreenimage.png");
         
             this.width=w;
             this.height=h;
@@ -16,9 +16,9 @@ class dustBin{
         var pos=this.body.position;
         push ();
         translate(pos.x,pos.y);
-        imageMode(CENTER);
+        rectMode(CENTER);
         fill("white");
-        image(0,0,this.width,this.height);
+        rect(0,0,this.width,this.height);
         pop ();
     }
 }
